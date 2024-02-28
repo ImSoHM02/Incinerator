@@ -1,2 +1,2 @@
 # Incinerator
- My incinirator mod for Don't Starve Together
+ My incinerator mod for Don't Starve Together
