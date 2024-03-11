@@ -23,6 +23,12 @@ Assets =
 	Asset("ANIM", "anim/ui_chest_4x4.zip"),
 }
 
+TUNING.incineratorconf = 
+{
+AshOrCharcoal = GetModConfigData{"ASHORCHARCOAL"}
+
+}
+
 local AIP_ACTION = env.AddAction("AIP_ACTION", "Operate", function(act)
 
 	local doer = act.doer
@@ -88,6 +94,7 @@ local tmpConfig = {
 	cancelbtn = { text = "Cancel", cb = nil, control = CONTROL_CANCEL },
 	acceptbtn = { text = "Confirm", cb = nil, control = CONTROL_ACCEPT },
 }
+
 
 
 local containers = GLOBAL.require "containers"

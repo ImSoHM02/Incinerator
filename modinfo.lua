@@ -2,13 +2,16 @@ description =
 [[
 An Incinerator to turn your useless items into Ash or Charcoal!
 
+-V1.0.1-
+Small code update for readability.
+
 -V1.0-
 Initial Release
 ]]
 
 name 						= "Incinerator"
 author 						= "I'm So HM02"
-version 					= "1.0"
+version 					= "1.0.1"
 forumthread 				= ""
 icon                        = "modicon.tex"
 icon_atlas                  = "modicon.xml"
@@ -32,7 +35,7 @@ configuration_options =
 {
     Title("Settings"),
     {
-        name    = "AshOrCharcoal",
+        name    = "ASHORCHARCOAL",
         label   = "Give Ash or Charcoal?",
         options = Options,
         default = 1,

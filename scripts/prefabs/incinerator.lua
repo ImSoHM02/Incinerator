@@ -11,9 +11,6 @@ local prefabs =
 	"collapse_small",
 }
 
-local modname = KnownModIndex:GetModActualName("Incinerator")
-local AOC = GetModConfigData("AshOrCharcoal", modname)
-
 local function onBurnItems(inst)
 	local hasItems = false
 	local returnItems = {}
@@ -23,7 +20,7 @@ local function onBurnItems(inst)
 		for k, item in pairs(inst.components.container.slots) do
 			local stackSize = item.components.stackable and item.components.stackable:StackSize() or 1
 			local lootItem -- Declare lootItem here
-			if AOC == 1 then
+			if TUNING.incineratorconf == 1 then
 				lootItem = "ash"
 			else
 				lootItem = "charcoal"
